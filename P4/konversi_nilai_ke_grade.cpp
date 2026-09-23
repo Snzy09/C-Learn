@@ -6,11 +6,9 @@ using namespace std;
 int main() {
     double nilai;
 
-    // Input nilai (0-100)
     cout << "Masukkan nilai (0-100): ";
     cin >> nilai;
 
-    // Konversi nilai ke Peringkat
     if (nilai >= 85)
         cout << "Peringkat: A" << endl;
     else if (nilai >= 70)

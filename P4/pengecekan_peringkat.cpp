@@ -1,14 +1,14 @@
 #include <iostream>
-  // Nama : M Ikhsan C P
-  // Nim  : 126140138
+// Nama : M Ikhsan C P
+// Nim  : 126140138
 using namespace std;
-    int main() {                                                                                                                                     
+
+int main() {
     int nilai;
-    
+
     cout << "Masukkan Nilai : ";
     cin >> nilai;
-  
-    
+
     if (nilai > 75) {
         cout << "=================\nNilai Anda: " << nilai << "\nStatus : Lulus";
     }
@@ -18,7 +18,6 @@ using namespace std;
     else {
         cout << "Nilai Tidak Valid";
     }
-    cout << "\n\nM ikhsan Candra Putra";
-    cout << "\n126140138";
+    cout << "\n\nCreate By Ikhsan" << endl;
     return 0;
-    }
+}

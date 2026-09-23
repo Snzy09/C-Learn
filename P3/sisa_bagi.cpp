@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
-// Nama : M Ikhsan Candra Putra
-// NIM  : 126140138
+// Nama : M Ikhsan C P
+// Nim  : 126140138
+
 int main() {
     int nilai, cek;
     bool status;
@@ -12,6 +13,6 @@ int main() {
     status = cek == 0;
     
     cout << "Sisa bagi adalah: " << cek << " Berupa " << (status ? "Bilangan genap":"Bilangan Ganjil") << endl;
-    cout << "Create By M Ikhsan Candra Putra";
+    cout << "Create By Ikhsan" << endl;
     return 0;
 }

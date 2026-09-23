@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
-// Nama : M Ikhsan Candra Putra
-// NIM  : 126140138
+// Nama : M Ikhsan C P
+// Nim  : 126140138
+
 int main() {
 
     int panjang, lebar, luas, keliling;
-
 
     cout << "Input Panjang: ";
     cin >> panjang;
@@ -17,6 +17,6 @@ int main() {
     
     cout << "Luas Persegi panjang: " << luas << endl;
     cout << "Keliling Persegi Panjang: " << keliling << endl;
-    cout << "Create By M Ikhsan Candra Putra";
+    cout << "Create By Ikhsan" << endl;
     return 0;
 }

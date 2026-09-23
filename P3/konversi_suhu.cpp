@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
-// Nama : M Ikhsan Candra Putra
-// NIM  : 126140138
+// Nama : M Ikhsan C P
+// Nim  : 126140138
+
 int main() {
 
     float celcius;
-
 
     cout << "Input suhu dalam celcius: ";
     cin >> celcius;
@@ -17,6 +17,6 @@ int main() {
     cout << "Fahrenheit:\t" << fahrenheit << endl;
     cout << "Kelvin:\t" << kelvin << endl;
     cout << "=============================" << endl;
-    cout << "Create By M Ikhsan Candra Putra";
+    cout << "Create By Ikhsan" << endl;
     return 0;
 }
