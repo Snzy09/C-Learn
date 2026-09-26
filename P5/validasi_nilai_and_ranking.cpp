@@ -20,7 +20,7 @@ int main() {
             break;
         }
 
-        cout << "⚠️ Validasi Gagal: Nilai harus antara 0 sampai 100!\n";
+        cout << "<!> Validasi Gagal: Nilai harus antara 0 sampai 100!\n";
         cout << "──────────────────────────────────────────\n";
     }
 
