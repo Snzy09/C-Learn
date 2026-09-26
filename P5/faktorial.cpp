@@ -21,7 +21,7 @@ int main() {
             break;
         }
 
-        cout << "⚠️ Validasi Gagal: Nilai harus rentang 0 - 12!\n";
+        cout << "<!> Validasi Gagal: Nilai harus rentang 0 - 12!\n";
         cout << "──────────────────────────────────────────\n";
     }
 
