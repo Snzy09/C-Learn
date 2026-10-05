@@ -3,7 +3,7 @@ using namespace std;
 /*
  * Nama       : M Ikhsan Candra Putra
  * NIM        : 126140138
- * Program    : Segitiga Angka Pattern
+ * Program    : Segitiga Terbalik Pattern
  */
 int main() {
     int n;
