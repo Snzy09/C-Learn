@@ -8,7 +8,6 @@
 // Inilah alasan data perlu disimpan di array.
 
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
 int main() {
@@ -18,7 +17,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
-    
+
     double total = 0;
     int maks = a[0];
     int idx_maks = 0;
@@ -39,9 +38,10 @@ int main() {
             diatas_rata++;
         }
     }
+    
+    cout.setf(ios::fixed);
+    cout.precision(2);
 
-    // Tampilkan hasil
-    cout << fixed << setprecision(2);
     cout << "Rata-rata: " << rata << endl;
     cout << "Tertinggi: " << maks << " (indeks " << idx_maks << ")" << endl;
     cout << "Di atas rata-rata: " << diatas_rata << endl;
