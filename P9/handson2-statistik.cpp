@@ -18,8 +18,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
-
-    // Putaran 1: Hitung total dan cari nilai tertinggi beserta indeksnya
+    
     double total = 0;
     int maks = a[0];
     int idx_maks = 0;
@@ -34,7 +33,6 @@ int main() {
 
     double rata = total / n;
 
-    // Putaran 2: Hitung banyak nilai di atas rata-rata
     int diatas_rata = 0;
     for (int i = 0; i < n; i++) {
         if (a[i] > rata) {
