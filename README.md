@@ -219,9 +219,9 @@ Proyek ini dilisensikan di bawah **[MIT License](LICENSE)**. Anda bebas mengguna
 
 <div align="center">
 
-Dibuat dengan ❤️ oleh **[M Ikhsan Candra Putra](https://github.com/Snzy09)**  
+Dibuat dengan oleh **[M Ikhsan Candra Putra](https://github.com/Snzy09)**  
 *Teknik Informatika — Institut Teknologi Sumatera (ITERA)*
 
-⭐ **Beri bintang jika repositori ini bermanfaat bagi Anda!** ⭐
+⭐ **Give Start!** ⭐
 
 </div>
