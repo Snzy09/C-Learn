@@ -100,7 +100,11 @@ C-Learn/
 │   ├── handson2-statistik.cpp       # Analisis statistik array (Total, Mean, Min, Max)
 │   └── handson3-geser.cpp           # Algoritma pergeseran / rotasi siklis elemen array
 └── P10/
-    └── answer.md                    # Analisis algoritma matriks 2D, transpos in-place & string
+    ├── bonus-palindrom.cpp          # Pengecekan kata palindrom dari dua ujung string
+    ├── handson1-matriks.cpp         # Penginputan matriks 2D dan perhitungan total per baris
+    ├── handson2-kata.cpp            # Analisis teks (panjang, vokal, kata, dan konversi kapital)
+    ├── handson3-transpos.cpp        # Perbaikan transposisi matriks 3x3 dan jumlah diagonal utama
+    └── answer.md                    # Dokumentasi lengkap: lembar jawaban latihan, modul, & hands-on
 ```
 
 ---
