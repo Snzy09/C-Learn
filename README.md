@@ -222,6 +222,6 @@ Proyek ini dilisensikan di bawah **[MIT License](LICENSE)**. Anda bebas mengguna
 Dibuat dengan oleh **[M Ikhsan Candra Putra](https://github.com/Snzy09)**  
 *Teknik Informatika — Institut Teknologi Sumatera (ITERA)*
 
-⭐ **Give Start!** ⭐
+⭐ **Give Star!** ⭐
 
 </div>
