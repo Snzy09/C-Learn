@@ -21,7 +21,7 @@
 
 **C-Learn** adalah repositori komprehensif yang mendokumentasikan perjalanan pembelajaran bahasa pemrograman **C++** dan materi **Algoritma Pemrograman** di Institut Teknologi Sumatera (ITERA). 
 
-Repositori ini tersusun secara modular berdasarkan pertemuan praktikum (P1 – P10), mencakup konsep paling dasar seperti *Standard I/O*, struktur percabangan (*conditional branching*), perulangan (*looping*), pola bentuk 2 dimensi (*nested loops*), manipulasi array 1 dimensi (statistik, pergeseran elemen, frekuensi), hingga array 2 dimensi (matriks) dan pengolahan *string*.
+Repositori ini tersusun secara modular berdasarkan pertemuan praktikum (P1 – P11), mencakup konsep paling dasar seperti *Standard I/O*, struktur percabangan (*conditional branching*), perulangan (*looping*), pola bentuk 2 dimensi (*nested loops*), manipulasi array 1 dimensi (statistik, pergeseran elemen, frekuensi), array 2 dimensi (matriks) dan pengolahan *string*, hingga algoritma pencarian (*Linear & Binary Search*).
 
 ---
 
@@ -38,6 +38,7 @@ Repositori ini tersusun secara modular berdasarkan pertemuan praktikum (P1 – P
   - [P6: Nested Loops & Pola Bintang (Patterns)](#p6-nested-loops--pola-bintang-patterns)
   - [P9: Array Satu Dimensi & Operasinya](#p9-array-satu-dimensi--operasinya)
   - [P10: Array Dua Dimensi & String](#p10-array-dua-dimensi--string)
+  - [P11: Searching (Linear & Binary Search)](#p11-searching-linear--binary-search)
 - [Tech Stack & Prasyarat](#-tech-stack--prasyarat)
 - [Cara Instalasi & Menjalankan Program](#-cara-instalasi--menjalankan-program)
 - [Panduan Kompilasi Singkat](#-panduan-kompilasi-singkat)
@@ -99,12 +100,18 @@ C-Learn/
 │   ├── handson1_nilai.cpp           # Input, penyimpanan, dan penampilan daftar nilai siswa
 │   ├── handson2-statistik.cpp       # Analisis statistik array (Total, Mean, Min, Max)
 │   └── handson3-geser.cpp           # Algoritma pergeseran / rotasi siklis elemen array
-└── P10/
-    ├── bonus-palindrom.cpp          # Pengecekan kata palindrom dari dua ujung string
-    ├── handson1-matriks.cpp         # Penginputan matriks 2D dan perhitungan total per baris
-    ├── handson2-kata.cpp            # Analisis teks (panjang, vokal, kata, dan konversi kapital)
-    ├── handson3-transpos.cpp        # Perbaikan transposisi matriks 3x3 dan jumlah diagonal utama
-    └── answer.md                    # Dokumentasi lengkap: lembar jawaban latihan, modul, & hands-on
+├── P10/
+│   ├── bonus-palindrom.cpp          # Pengecekan kata palindrom dari dua ujung string
+│   ├── handson1-matriks.cpp         # Penginputan matriks 2D dan perhitungan total per baris
+│   ├── handson2-kata.cpp            # Analisis teks (panjang, vokal, kata, dan konversi kapital)
+│   ├── handson3-transpos.cpp        # Perbaikan transposisi matriks 3x3 dan jumlah diagonal utama
+│   └── answer.md                    # Dokumentasi lengkap: lembar jawaban latihan, modul, & hands-on
+└── P11/
+    ├── bonus-banding.cpp            # Komparasi efisiensi langkah Linear Search vs Binary Search
+    ├── handson1-cari.cpp            # Implementasi Linear Search dasar dan penghitung perbandingan
+    ├── handson2-nama.cpp            # Linear Search pencarian semua kemunculan string pada daftar hadir
+    ├── handson3-biner.cpp           # Perbaikan Binary Search, trace table, dan analisis batas loop
+    └── answer.md                    # Dokumentasi lengkap: lembar jawaban, trace table, dan evaluasi konsep
 ```
 
 ---
@@ -148,6 +155,13 @@ Pemahaman konseptual dan algoritma lanjut mengenai tabel (matriks) dan teks:
 - Transposisi matriks *in-place* dengan optimasi batas segitiga atas ($j = i + 1$) untuk mencegah *double swap*.
 - Penelusuran string karakter demi karakter (menghitung huruf vokal/konsonan).
 - Perancangan algoritma verifikasi anagram menggunakan array pencacah frekuensi berukuran 26 karakter ($O(N)$).
+
+### P11: Searching (Linear & Binary Search)
+Algoritma pencarian data pada array satu dimensi beserta analisis efisiensi perbandingannya:
+- **Linear Search:** Pencarian beruntun satu per satu pada data acak, penanganan kasus tidak ditemukan (`posisi = -1`), dan pencarian seluruh kemunculan nama pada daftar hadir.
+- **Binary Search:** Algoritma pencarian biner pada data terurut naik menggunakan teknik *divide and conquer* ($O(\log_2 N)$).
+- **Trace Table & Debugging:** Penelusuran variabel pointer `low`, `high`, `mid`, dan perbaikan kesalahan umum (syarat loop `low <= high`, arah pemotongan interval `mid + 1` / `mid - 1`, serta pengindeksan array berbasis nol).
+- **Analisis Komparasi:** Pengujian perbandingan banyak langkah antara Linear Search ($O(N)$) dan Binary Search ($O(\log N)$) pada 100 data ganjil.
 
 ---
 
@@ -197,6 +211,13 @@ g++ diamond_pattern.cpp -o diamond
 cd P9
 g++ handson2-statistik.cpp -o statistik
 ./statistik
+```
+
+#### Contoh 5: Menjalankan Program P11 (Perbandingan Linear vs Binary Search)
+```bash
+cd P11
+g++ bonus-banding.cpp -o banding
+./banding
 ```
 
 ---
