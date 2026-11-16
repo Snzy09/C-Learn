@@ -21,7 +21,7 @@
 
 **C-Learn** adalah repositori komprehensif yang mendokumentasikan perjalanan pembelajaran bahasa pemrograman **C++** dan materi **Algoritma Pemrograman** di Institut Teknologi Sumatera (ITERA). 
 
-Repositori ini tersusun secara modular berdasarkan pertemuan praktikum (P1 – P11), mencakup konsep paling dasar seperti *Standard I/O*, struktur percabangan (*conditional branching*), perulangan (*looping*), pola bentuk 2 dimensi (*nested loops*), manipulasi array 1 dimensi (statistik, pergeseran elemen, frekuensi), array 2 dimensi (matriks) dan pengolahan *string*, hingga algoritma pencarian (*Linear & Binary Search*).
+Repositori ini tersusun secara modular berdasarkan pertemuan praktikum (P1 – P13), mencakup konsep paling dasar seperti *Standard I/O*, struktur percabangan (*conditional branching*), perulangan (*looping*), pola bentuk 2 dimensi (*nested loops*), manipulasi array 1 dimensi (statistik, pergeseran elemen, frekuensi), array 2 dimensi (matriks) dan pengolahan *string*, algoritma pencarian (*Linear & Binary Search*), pengurutan data (*Sorting*), hingga modularitas dan pemrograman fungsi (*Functions & Parameter Passing*).
 
 ---
 
@@ -40,6 +40,7 @@ Repositori ini tersusun secara modular berdasarkan pertemuan praktikum (P1 – P
   - [P10: Array Dua Dimensi & String](#p10-array-dua-dimensi--string)
   - [P11: Searching (Linear & Binary Search)](#p11-searching-linear--binary-search)
   - [P12: Sorting (Bubble & Selection Sort)](#p12-sorting-bubble--selection-sort)
+  - [P13: Fungsi & Modularitas](#p13-fungsi--modularitas)
 - [Tech Stack & Prasyarat](#-tech-stack--prasyarat)
 - [Cara Instalasi & Menjalankan Program](#-cara-instalasi--menjalankan-program)
 - [Panduan Kompilasi Singkat](#-panduan-kompilasi-singkat)
@@ -113,12 +114,18 @@ C-Learn/
 │   ├── handson2-nama.cpp            # Linear Search pencarian semua kemunculan string pada daftar hadir
 │   ├── handson3-biner.cpp           # Perbaikan Binary Search, trace table, dan analisis batas loop
 │   └── answer.md                    # Dokumentasi lengkap: lembar jawaban, trace table, dan evaluasi konsep
-└── P12/
-    ├── bonus-hitung.cpp             # Komparasi efisiensi Bubble Sort berhenti dini (early-exit)
-    ├── handson1-bubble.cpp          # Bubble Sort menaik dengan pencetakan jejak tiap putaran
-    ├── handson2-peringkat.cpp       # Papan peringkat (leaderboard) Selection Sort turun & array sejajar
-    ├── handson3-tukar.cpp           # Perbaikan 3 bug Bubble Sort dan trace putaran pertama
-    └── answer.md                    # Dokumentasi lengkap: lembar jawaban, trace table, & Exit Ticket 12
+├── P12/
+│   ├── bonus-hitung.cpp             # Komparasi efisiensi Bubble Sort berhenti dini (early-exit)
+│   ├── handson1-bubble.cpp          # Bubble Sort menaik dengan pencetakan jejak tiap putaran
+│   ├── handson2-peringkat.cpp       # Papan peringkat (leaderboard) Selection Sort turun & array sejajar
+│   ├── handson3-tukar.cpp           # Perbaikan 3 bug Bubble Sort dan trace putaran pertama
+│   └── answer.md                    # Dokumentasi lengkap: lembar jawaban, trace table, & Exit Ticket 12
+└── P13/
+    ├── bonus-statistik.cpp          # Pustaka fungsi modular statistik array (min, max, rata-rata, sort)
+    ├── handson1-bangun.cpp          # Fungsi void pencetak garis dan fungsi perhitungan luas bidang
+    ├── handson2-prima.cpp           # Fungsi bool pemverifikasi bilangan prima dan pencacah frekuensi array
+    ├── handson3-referensi.cpp       # Perbaikan fungsi pass by reference, type casting, dan return
+    └── answer.md                    # Dokumentasi lengkap: lembar jawaban, trace table, & analisis konsep
 ```
 
 ---
@@ -177,6 +184,14 @@ Algoritma pengurutan data array, pelacakan langkah putaran, dan sinkronisasi arr
 - **Array Sejajar (*Parallel Arrays*):** Sinkronisasi pengurutan multi-kriteria pada dua array independen (nama dan skor leaderboard) agar konsistensi data terjaga.
 - **Trace Table & Debugging:** Analisis kesalahan logika pengurutan (kondisi loop luar, arah perbandingan, dan kesalahan penukaran variabel tanpa penampung sementara).
 - **Analisis Komparasi:** Pengujian perbandingan dan pertukaran pada tiga skenario data (terurut, terbalik, dan acak).
+
+### P13: Fungsi & Modularitas
+Perancangan program terstruktur dengan pemecahan fungsi, manajemen memori parameter, dan jangkauan variabel (*variable scope*):
+- **Fungsi Void & Non-Void:** Penerapan fungsi `void` untuk formatting konsol dan fungsi ber-return untuk komputasi luas bidang datar.
+- **Fungsi Boolean & Array:** Pemanfaatan fungsi predikat `bool` (`isPrima`) yang dikombinasikan dengan iterasi parameter array untuk pelacakan frekuensi prima.
+- **Pass by Value vs Pass by Reference:** Pemahaman mendalam manipulasi memori variabel pemanggil menggunakan operator referensi (`&`) pada fungsi pertukaran variabel (`swap`).
+- **Debugging & Type Casting:** Perbaikan kesalahan fatal seperti *integer truncation* pada rata-rata dan *missing return path* pada fungsi bernilai.
+- **Pustaka Modular:** Perancangan kumpulan fungsi statistik array yang terisolasi dan dapat digunakan kembali (*reusable functions*).
 
 ---
 
@@ -240,6 +255,13 @@ g++ bonus-banding.cpp -o banding
 cd P12
 g++ handson2-peringkat.cpp -o peringkat
 ./peringkat
+```
+
+#### Contoh 7: Menjalankan Program P13 (Pustaka Statistik Array)
+```bash
+cd P13
+g++ bonus-statistik.cpp -o statistik
+./statistik
 ```
 
 ---
